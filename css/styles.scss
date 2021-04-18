@@ -1,0 +1,121 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 10px;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(#172d44, #2c3e50);
+
+  .menu {
+    display: flex;
+    justify-content: center;
+    width: 600px;
+
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.349);
+    position: relative;
+    overflow: hidden;
+    // box-shadow: ;
+
+    a {
+      padding: 15px 0;
+      height: 100%;
+      font-size: 1.4rem;
+      display: block;
+      color: white;
+      text-decoration: none;
+      text-align: center;
+      z-index: 1;
+      letter-spacing: 1.5px;
+
+      &:nth-child(1) {
+        width: 100px;
+      }
+
+      &:nth-child(2) {
+        width: 120px;
+      }
+
+      &:nth-child(3) {
+        width: 100px;
+      }
+
+      &:nth-child(4) {
+        width: 150px;
+      }
+
+      &:nth-child(5) {
+        width: 130px;
+      }
+
+      &:nth-child(1) {
+        &:hover ~ .animation-float,
+        & ~ .start-home {
+          left: 0;
+          width: 100px;
+          background: linear-gradient(180deg, #0f7963, #1abc9c);
+        }
+      }
+
+      &:nth-child(2) {
+        &:hover ~ .animation-float,
+        & ~ .start-contact {
+          left: 100px;
+          width: 120px;
+          background: linear-gradient(180deg, #8a2d23, #e74c3c);
+        }
+      }
+
+      &:nth-child(3) {
+        &:hover ~ .animation-float,
+        & ~ .start-blog {
+          left: 220px;
+          width: 100px;
+          background: linear-gradient(180deg, #1b557c, #3498db);
+        }
+      }
+
+      &:nth-child(4) {
+        &:hover ~ .animation-float,
+        & ~ .start-portefolio {
+          left: 320px;
+          width: 150px;
+          background: linear-gradient(180deg, #5c316d, #9b59b6);
+        }
+      }
+
+      &:nth-child(5) {
+        &:hover ~ .animation-float,
+        & ~ .start-about {
+          left: 470px;
+          width: 130px;
+          background: linear-gradient(180deg, #965114, #e67e22);
+        }
+      }
+    }
+
+    .animation-float {
+      position: absolute;
+      height: 100%;
+      //   top: 0;
+      left: 0;
+      z-index: 0;
+      transition: all 0.5s ease;
+      border-radius: 8px;
+      //   box-shadow: ;
+    }
+  }
+}

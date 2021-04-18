@@ -1,0 +1,131 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-size: 10px;
+}
+
+.container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#172d44), to(#2c3e50));
+  background-image: linear-gradient(#172d44, #2c3e50);
+}
+
+.container .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 600px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.349);
+  position: relative;
+  overflow: hidden;
+}
+
+.container .menu a {
+  padding: 15px 0;
+  height: 100%;
+  font-size: 1.4rem;
+  display: block;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  z-index: 1;
+  letter-spacing: 1.5px;
+}
+
+.container .menu a:nth-child(1) {
+  width: 100px;
+}
+
+.container .menu a:nth-child(2) {
+  width: 120px;
+}
+
+.container .menu a:nth-child(3) {
+  width: 100px;
+}
+
+.container .menu a:nth-child(4) {
+  width: 150px;
+}
+
+.container .menu a:nth-child(5) {
+  width: 130px;
+}
+
+.container .menu a:nth-child(1):hover ~ .animation-float,
+.container .menu a:nth-child(1) ~ .start-home {
+  left: 0;
+  width: 100px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0f7963), to(#1abc9c));
+  background: linear-gradient(180deg, #0f7963, #1abc9c);
+}
+
+.container .menu a:nth-child(2):hover ~ .animation-float,
+.container .menu a:nth-child(2) ~ .start-contact {
+  left: 100px;
+  width: 120px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#8a2d23), to(#e74c3c));
+  background: linear-gradient(180deg, #8a2d23, #e74c3c);
+}
+
+.container .menu a:nth-child(3):hover ~ .animation-float,
+.container .menu a:nth-child(3) ~ .start-blog {
+  left: 220px;
+  width: 100px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1b557c), to(#3498db));
+  background: linear-gradient(180deg, #1b557c, #3498db);
+}
+
+.container .menu a:nth-child(4):hover ~ .animation-float,
+.container .menu a:nth-child(4) ~ .start-portefolio {
+  left: 320px;
+  width: 150px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#5c316d), to(#9b59b6));
+  background: linear-gradient(180deg, #5c316d, #9b59b6);
+}
+
+.container .menu a:nth-child(5):hover ~ .animation-float,
+.container .menu a:nth-child(5) ~ .start-about {
+  left: 470px;
+  width: 130px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#965114), to(#e67e22));
+  background: linear-gradient(180deg, #965114, #e67e22);
+}
+
+.container .menu .animation-float {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  z-index: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  border-radius: 8px;
+}
+/*# sourceMappingURL=styles.css.map */
